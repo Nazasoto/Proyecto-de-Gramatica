@@ -166,3 +166,44 @@ footer a {
 footer a:hover {
     color: #af964c;
 }
+
+.contenedor {
+    display: grid;
+    place-items: left;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.contenedor input[type="text"] {
+    width: 200px;
+    height: 20px;
+}
+
+
+.button-veri {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #AF934C;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button-veri:hover {
+    background-color: #4f442a;
+}
+
+#result {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+}
+

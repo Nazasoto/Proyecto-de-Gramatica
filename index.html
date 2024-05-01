@@ -27,6 +27,7 @@
         <div id="preguntas">
             <!-- Aquí se mostrarán las preguntas y respuestas -->
             <ol>
+                <!--Primero-->
                <div id="preguntas">
                     <p id="pregunta1" class="pregunta">1. Identifica todos los sustantivos y artículos que encuentres en el texto.</p>
                     <input type="text" id="respuesta1" placeholder="Tu respuesta...">
@@ -35,6 +36,7 @@
                     <p id="contadorRespuestas" class="contador"></p>
                </div>
             
+               <!--Segundo-->
                <div id="preguntas">
                 <!-- Segunda pregunta -->
                          <p id="pregunta2" class="pregunta">2. Clasifica los sustantivos en comunes y propios. (separa tus respuestas por comas) </p>
@@ -58,41 +60,25 @@
                    
                </div>
 
-               <div id="preguntas" class="contenedor">
-                    <!-- Tercera pregunta -->
-                
-                    <div class="actividad">
-                        <div class="palabras">
-                            <p class="titulo">Palabras para emparejar:</p>
+               <!--Tercero-->
+               <div class="contenedor">
+                <p>3. Clasifica los sustantivos en Concreto o Abstracto. (como si fuera un verdadero o falso)</p>
+        <div>
+            <ul>
+                    <li><span>Noche </span>   <input type="text" data-answer="concreto"></li> 
+                    <li><span>Horror </span>  <input type="text" data-answer="abstracto"></li>                    
+                    <li><span>Peligro</span>  <input type="text" data-answer="abstracto"></li>
+                    <li><span>Tierra</span>   <input type="text" data-answer="concreto"></li>
+                    <li><span>Luna</span>     <input type="text" data-answer="concreto"></li>
+                    <li><span>Nube</span>     <input type="text" data-answer="concreto"></li>
+            </ul>
+        </div>
+        <button id="checkButton" class="button-veri">Verificar respuestas</button>
+        <div id="result"></div>
+            </div>
+            
 
-                            <div class="palabra" id="concreto-2" draggable="true">Selva</div>                       
-                            <div class="palabra" id="abstracto-4" draggable="true">Amistad</div>
-                            <div class="palabra" id="concreto-3" draggable="true">Yerba</div>                         
-                            <div class="palabra" id="abstracto-2" draggable="true">Nobleza</div>
-                            <div class="palabra" id="concreto-4" draggable="true">Flecha</div>
-                            <div class="palabra" id="abstracto-6" draggable="true">Cansancio</div>
-                            <div class="palabra" id="concreto-6" draggable="true">Cansado</div>
-                            <div class="palabra" id="abstracto-1" draggable="true">Felicidad</div>
-                            <div class="palabra" id="concreto-5" draggable="true">Planta</div>
-                            <div class="palabra" id="abstracto-3" draggable="true">Infusión</div>
-                            <div class="palabra" id="abstracto-5" draggable="true">Hermandad</div>                          
-                            <div class="palabra" id="concreto-1" draggable="true">Luna</div>
-
-                        </div>
-                        <div class="categorias">
-                            <div class="categoria" id="concreto">
-                                <p class="titulo">Concreto</p>
-                            </div>
-                            <div class="categoria" id="abstracto">
-                                <p class="titulo">Abstracto</p>
-                            </div>
-                        </div>
-                    </div>
-                    <p id="mensajito"></p>
-                    <p id="mensajitoM"></p>
-
-               </div>
-
+                <!--Cuarto-->
                <div id="preguntas">
                    <!-- Cuarta pregunta -->
                         <p id="pregunta4" class="pregunta">4. Busca los sustantivos que están en plural y singular en el suguiente fragmento del texto.</p>
@@ -104,6 +90,7 @@
                         <p id="mensajePerdiste4" class="mensaje"></p>
                </div>
 
+                <!--Quinto-->
                <div id="preguntas">
                     <!-- Quinta pregunta -->
                     <p id="pregunta5" class="pregunta">5. Identifica los sustantivos masculinos y femeninos presentes en el texto.</p>
@@ -113,6 +100,7 @@
 
                </div>
 
+               <!--Sexto-->
                <div id="preguntas">
                         <!-- Sexta pregunta -->
                         <p id="pregunta6" class="pregunta">6. Clasifica los artículos según su género (masculino, femenino) y número (singular, plural).</p>
@@ -121,7 +109,7 @@
                         <p id="feedback6" class="feedback"></p>
                </div>
 
-                    
+                <!--Ultimo-->
                 <li>Coloca el artículo definido o indefinido que corresponda en las siguientes oraciones:
                     <ul>
                         <li>___ peligro había desaparecido.</li>
