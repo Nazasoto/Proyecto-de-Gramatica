@@ -26,7 +26,6 @@
         <h2>Preguntas sobre la Leyenda</h2>
         <div id="preguntas">
             <!-- Aquí se mostrarán las preguntas y respuestas -->
-            <p><strong>Preguntas sobre la leyenda:</strong></p>
             <ol>
                <div id="preguntas">
                     <p id="pregunta1" class="pregunta">1. Identifica todos los sustantivos y artículos que encuentres en el texto.</p>
@@ -38,7 +37,7 @@
             
                <div id="preguntas">
                 <!-- Segunda pregunta -->
-                         <p id="pregunta2" class="pregunta">2. Clasifica los sustantivos en comunes y propios.</p>
+                         <p id="pregunta2" class="pregunta">2. Clasifica los sustantivos en comunes y propios. (separa tus respuestas por comas) </p>
                     <div>
                         <label for="respuestaComunes" id="labelComunes">Sustantivos Comunes:</label>
                         <input type="text" id="respuestaComunes" placeholder="Escribe los sustantivos comunes...">
@@ -59,22 +58,52 @@
                    
                </div>
 
-               <div id="preguntas">
+               <div id="preguntas" class="contenedor">
                     <!-- Tercera pregunta -->
-                <p id="pregunta3" class="pregunta">3. Identifica los sustantivos concretos y abstractos.</p>
-                    <input type="text" id="respuesta3" placeholder="Tu respuesta...">
-                    <button id="verificar3">Verificar respuesta</button>
-                <p id="feedback3" class="feedback"></p>
+                
+                    <div class="actividad">
+                        <div class="palabras">
+                            <p class="titulo">Palabras para emparejar:</p>
+
+                            <div class="palabra" id="concreto-2" draggable="true">Selva</div>                       
+                            <div class="palabra" id="abstracto-4" draggable="true">Amistad</div>
+                            <div class="palabra" id="concreto-3" draggable="true">Yerba</div>                         
+                            <div class="palabra" id="abstracto-2" draggable="true">Nobleza</div>
+                            <div class="palabra" id="concreto-4" draggable="true">Flecha</div>
+                            <div class="palabra" id="abstracto-6" draggable="true">Cansancio</div>
+                            <div class="palabra" id="concreto-6" draggable="true">Cansado</div>
+                            <div class="palabra" id="abstracto-1" draggable="true">Felicidad</div>
+                            <div class="palabra" id="concreto-5" draggable="true">Planta</div>
+                            <div class="palabra" id="abstracto-3" draggable="true">Infusión</div>
+                            <div class="palabra" id="abstracto-5" draggable="true">Hermandad</div>                          
+                            <div class="palabra" id="concreto-1" draggable="true">Luna</div>
+
+                        </div>
+                        <div class="categorias">
+                            <div class="categoria" id="concreto">
+                                <p class="titulo">Concreto</p>
+                            </div>
+                            <div class="categoria" id="abstracto">
+                                <p class="titulo">Abstracto</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p id="mensajito"></p>
+                    <p id="mensajitoM"></p>
 
                </div>
+
                <div id="preguntas">
-                    <!-- Cuarta pregunta -->
-                    <p id="pregunta4" class="pregunta">4. Busca los sustantivos que están en plural y singular en el texto.</p>
-                    <input type="text" id="respuesta4" placeholder="Tu respuesta...">
-                    <button id="verificar4">Verificar respuesta</button>
-                    <p id="feedback4" class="feedback"></p>
-
+                   <!-- Cuarta pregunta -->
+                        <p id="pregunta4" class="pregunta">4. Busca los sustantivos que están en plural y singular en el suguiente fragmento del texto.</p>
+                        <p>Sin embargo, esa noche mientras descansaba, Yací y Araí aparecieron en su sueño y después de darse a conocer, agradecidas por su nobleza, le hicieron un regalo. En sueños le explicaron que cuando despertara, encontraría a su lado una planta, cuyas hojas debían ser tostadas para hacer una infusión.</p>
+                        <input type="text" id="respuesta4" placeholder="Tu respuesta...">
+                        <button id="verificar4">Verificar respuesta</button>
+                        <p id="feedback4" class="feedback"></p>
+                        <p id="contadorOportunidades4" class="contador">Oportunidades restantes: 6</p>
+                        <p id="mensajePerdiste4" class="mensaje"></p>
                </div>
+
                <div id="preguntas">
                     <!-- Quinta pregunta -->
                     <p id="pregunta5" class="pregunta">5. Identifica los sustantivos masculinos y femeninos presentes en el texto.</p>
@@ -83,6 +112,7 @@
                     <p id="feedback5" class="feedback"></p>
 
                </div>
+
                <div id="preguntas">
                         <!-- Sexta pregunta -->
                         <p id="pregunta6" class="pregunta">6. Clasifica los artículos según su género (masculino, femenino) y número (singular, plural).</p>
@@ -106,6 +136,14 @@
             <div id="resultado"></div>
         </div>
     </div>
+    
+    <footer>
+        <p><a href="">Tatiana Areguattí</a> | <a href="">Soto Nazareno</a></p>
+    </footer>
+
     <script src="script.js"></script>
+    <script src="./Js/logic2.js"></script>
+    <script src="./Js/logic3.js"></script>
+    <script src="./Js/logic4.js"></script>
 </body>
 </html>
