@@ -119,7 +119,7 @@ function actualizarContador() {
 // Función para mostrar el mensaje de victoria
 function mostrarMensajeVictoria() {
     const mensajeVictoria = document.getElementById("mensaje-victoria");
-    mensajeVictoria.textContent = "¡Bien hecho, pasaste quinta consigna!";
+    mensajeVictoria.textContent = "¡Todas las respuestas son correctas, has superado la quinta consigna!";
     mensajeVictoria.style.color = "green";
 }
 

@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
       });
   
       if (incorrectAnswers === 0) {
-        resultContainer.textContent = "¡Felicidades, respondiste todo bien!";
+        resultContainer.textContent = "¡Todas las respuestas son correctas, has superado la tercera consigna!";
         disableGame(); // Bloquear el juego si el usuario gana
       } else {
         remainingAttempts--;

@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
 
         if (palabrasRestantes === 0) { // Todas las palabras han sido acertadas
-            feedback.textContent = '¡Todas las respuestas son correctas!';
+            feedback.textContent = '¡Todas las respuestas son correctas, has superado la cuarta consigna!';
             feedback.classList.add('texto-verde');
             verificarButton.disabled = true;
         } else if (palabrasCorrectasContador > 0) {

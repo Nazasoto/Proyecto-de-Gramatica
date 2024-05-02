@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
       }
   
       if (incorrectAnswers === 0) {
-        resultContainer.textContent = "¡Felicidades, respondiste todo bien!";
+        resultContainer.textContent = "¡Todas las respuestas son correctas, has superado la sexta consigna!";
         disableGame();
       } else {
         remainingAttemptsGame--;

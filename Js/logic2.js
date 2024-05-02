@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
             // Mostrar mensaje de aprobación en verde
             let mensajeAprobado = document.getElementById("aprobado2");
-            mensajeAprobado.textContent = "¡Haz pasado la segunda actividad!";
+            mensajeAprobado.textContent = "¡Todas las respuestas son correctas, has superado la primera consigna!";
             mensajeAprobado.style.color = "green";
         }
     }
