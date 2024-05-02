@@ -38,6 +38,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         if (palabrasRestantes === 0) { // Todas las palabras han sido acertadas
             feedback.textContent = '¡Todas las respuestas son correctas!';
+            feedback.classList.add('texto-verde');
             verificarButton.disabled = true;
         } else if (palabrasCorrectasContador > 0) {
             feedback.textContent = `Respuesta correcta. Palabras restantes: ${palabrasRestantes}.`;
@@ -49,6 +50,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         if (oportunidadesRestantes === 0) {
             mensajePerdiste.textContent = '¡Perdiste! Se acabaron las oportunidades.';
+            mensajePerdiste.classList.add('texto-rojo');
             verificarButton.disabled = true;
         }
     });

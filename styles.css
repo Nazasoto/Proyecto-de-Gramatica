@@ -168,23 +168,25 @@ footer a:hover {
 }
 
 .contenedor {
-    display: grid;
-    place-items: left;
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 20px;
+    display: block;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.contenedor ul li{
+    list-style: none;
+}
 
+.contenedor ul{
+    display: grid;
+    place-items: center;
+}
 
-
-
-.button-veri {
+.button-veri { 
     display: block;
-    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
     padding: 10px 20px;
     background-color: #AF934C;
     color: #fff;
@@ -202,4 +204,46 @@ footer a:hover {
     font-weight: bold;
     margin-top: 20px;
 }
+
+.texto-verde {
+    color: #4CAF50;
+}
+
+.texto-rojo{
+    color: red;
+}
+
+
+/*sopa de letras*/
+.container-sopa{
+    margin-top: 20px;
+}
+
+#sopa-letras {
+    display: grid;
+    grid-template-columns: repeat(10, 50px);
+    grid-template-rows: repeat(10, 50px);
+    gap: 5px;
+}
+
+.letra {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border: 1px solid black;
+    font-size: 1.2em;
+}
+
+.correcto {
+    background-color: green;
+}
+
+.completo {
+    color: green;
+}
+
+
+
+
 

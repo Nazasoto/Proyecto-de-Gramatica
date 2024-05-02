@@ -63,21 +63,21 @@
                <!--Tercero-->
                <div class="contenedor">
                 <p>3. Clasifica los sustantivos en Concreto o Abstracto. (como si fuera un verdadero o falso)</p>
-        <div>
-            <ul>
-                    <li><span>Noche </span>   <input type="text" data-answer="concreto"></li> 
-                    <li><span>Horror </span>  <input type="text" data-answer="abstracto"></li>                    
-                    <li><span>Peligro</span>  <input type="text" data-answer="abstracto"></li>
-                    <li><span>Tierra</span>   <input type="text" data-answer="concreto"></li>
-                    <li><span>Luna</span>     <input type="text" data-answer="concreto"></li>
-                    <li><span>Nube</span>     <input type="text" data-answer="concreto"></li>
-            </ul>
-        </div>
-        <button id="checkButton" class="button-veri">Verificar respuestas</button>
-        <div id="result"></div>
+                <div>
+                    <ul>
+                        <li><span>Noche</span> <input type="text" data-answer="concreto"></li>
+                        <li><span>Horror</span> <input type="text" data-answer="abstracto"></li>
+                        <li><span>Peligro</span> <input type="text" data-answer="abstracto"></li>
+                        <li><span>Tierra</span> <input type="text" data-answer="concreto"></li>
+                        <li><span>Luna</span> <input type="text" data-answer="concreto"></li>
+                        <li><span>Nube</span> <input type="text" data-answer="concreto"></li>
+                    </ul>
+                </div>
+                <button id="checkButton" class="button-veri">Verificar respuestas</button>
+                <div id="result"></div>
+                <p id="remainingAttempts"></p>
             </div>
             
-
                 <!--Cuarto-->
                <div id="preguntas">
                    <!-- Cuarta pregunta -->
@@ -91,15 +91,17 @@
                </div>
 
                 <!--Quinto-->
-               <div id="preguntas">
-                    <!-- Quinta pregunta -->
-                    <p id="pregunta5" class="pregunta">5. Identifica los sustantivos masculinos y femeninos presentes en el texto.</p>
-                    <input type="text" id="respuesta5" placeholder="Tu respuesta...">
-                    <button id="verificar5">Verificar respuesta</button>
-                    <p id="feedback5" class="feedback"></p>
-
-               </div>
-
+                <div id="sopa-letras"></div>
+                <div id="pistas"></div>
+                <div id="input-container" class="container-sopa">
+                    <label for="sustantivo">Escribe aquí:</label>
+                    <input type="text" id="sustantivo" placeholder="Tu respuesta...">
+                    <button id="verificar">Verificar respuesta</button>
+                    <p id="contador-respuestas"></p>
+                    <p id="mensaje-victoria"></p>
+                    <ul id="respuestas-correctas"></ul>
+                    <p id="mensaje-repetido"></p> 
+                </div>
                <!--Sexto-->
                <div id="preguntas">
                         <!-- Sexta pregunta -->
@@ -133,5 +135,6 @@
     <script src="./Js/logic2.js"></script>
     <script src="./Js/logic3.js"></script>
     <script src="./Js/logic4.js"></script>
+    <script src="./Js/logic5.js"></script>
 </body>
 </html>
