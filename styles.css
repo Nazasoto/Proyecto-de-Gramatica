@@ -245,5 +245,13 @@ footer a:hover {
 
 
 
-
+.correct {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .incorrect {
+    color: red;
+    font-weight: bold;
+  }
 
