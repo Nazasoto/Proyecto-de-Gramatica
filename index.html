@@ -112,18 +112,19 @@
                </div>
 
                 <!--Ultimo-->
-                <li>Coloca el artículo definido o indefinido que corresponda en las siguientes oraciones:
-                    <ul>
-                        <li>___ peligro había desaparecido.</li>
-                        <li>Le hicieron ___ regalo.</li>
-                        <li>Aquella infusión era ___ mate, ___ bebida exquisita.</li>
-                        <li>Cuando de pronto, las sorprendió ___ yaguareté que amenazaba lanzarse sobre ellas.</li>
-                        <li>Con ___ destreza del mejor arquero.</li>
-                    </ul>
-                </li>
-            </ol>
-            <button id="verificar">Verificar respuestas</button>
-            <div id="resultado"></div>
+                <div class="contenido">
+                    <h2>Coloca el artículo definido o indefinido que corresponda en las siguientes oraciones:</h2>
+                    <ol>
+                        <li> <span id="respuesta1" class="placeholder" contenteditable="true"></span> peligro había desaparecido.</li>
+                        <li>Le hicieron <span id="respuesta2" class="placeholder" contenteditable="true"></span> regalo.</li>
+                        <li>Aquella infusión era <span id="respuesta3" class="placeholder" contenteditable="true"></span> mate, <span id="respuesta4" class="placeholder" contenteditable="true"></span> bebida exquisita.</li>
+                        <li>Cuando de pronto, las sorprendió <span id="respuesta5" class="placeholder" contenteditable="true"></span> yaguareté que amenazaba lanzarse sobre ellas.</li>
+                        <li>Con <span id="respuesta6" class="placeholder" contenteditable="true"></span> destreza del mejor arquero.</li>
+                      </ol>
+                      <button id="verifyButton">Verificar respuestas</button>
+                      <div id="resultContainer"></div>
+                      <p id="remainingAttempts6"></p>
+                  </div>
         </div>
     </div>
     
@@ -136,5 +137,6 @@
     <script src="./Js/logic3.js"></script>
     <script src="./Js/logic4.js"></script>
     <script src="./Js/logic5.js"></script>
+    <script src="./Js/logic6.js"></script>
 </body>
 </html>

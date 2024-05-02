@@ -255,3 +255,13 @@ footer a:hover {
     font-weight: bold;
   }
 
+
+.contenido span[contenteditable="true"]:empty::before {
+    content: "\00a0\00a0\00a0"; /* Espacio no separable (no-break space) */
+    visibility: hidden;
+}  
+
+.placeholder {
+    border-bottom: 1px solid black;
+    padding: 0 5px;
+  }
