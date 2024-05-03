@@ -1,56 +1,78 @@
-document.addEventListener("DOMContentLoaded", function() {
-  const verifyButton = document.getElementById("verifyButton");
-  const resultContainer = document.getElementById("resultContainer");
-  const attemptsMessage = document.getElementById("remainingAttempts6");
-  const expectedAnswers = ["el", "un", "el", "una", "un", "la"];
-  const MAX_ATTEMPTS = 3;
-  let remainingAttemptsGame = MAX_ATTEMPTS;
+const correctAnswers = {
+  masculinoSingular: ['un', 'el'],
+  femeninoSingular: ['una', 'la'],
+  masculinoPlural: ['unos', 'los'],
+  femeninoPlural: ['unas', 'las']
+};
 
-  verifyButton.addEventListener("click", function() {
-    let correctAnswers = 0;
-    let incorrectAnswers = 0;
-    let unanswered = 0;
+let attempts = 3;
 
-    for (let i = 0; i < expectedAnswers.length; i++) {
-      const userAnswer = document.getElementById(`respuesta${i + 1}`).innerText.trim().toLowerCase();
+document.getElementById("btn-verificar").addEventListener("click", () => {
+  const inputMasculinoSingular = document.getElementById("input-masculino-singular");
+  const inputFemeninoSingular = document.getElementById("input-femenino-singular");
+  const inputMasculinoPlural = document.getElementById("input-masculino-plural");
+  const inputFemeninoPlural = document.getElementById("input-femenino-plural");
+  const feedbackArticulos = document.getElementById("feedback-articulos");
+  const contadorcito = document.getElementById("contadorcito");
+  const resultado = document.getElementById("resultado");
+  let allCorrect = true;
 
-      if (userAnswer === expectedAnswers[i]) {
-        document.getElementById(`respuesta${i + 1}`).classList.add("correct");
-        correctAnswers++;
-      } else if (userAnswer === "") {
-        document.getElementById(`respuesta${i + 1}`).classList.remove("correct", "incorrect");
-        unanswered++;
-      } else {
-        document.getElementById(`respuesta${i + 1}`).classList.add("incorrect");
-        incorrectAnswers++;
-      }
-    }
+  const masculinoSingularAnswers = inputMasculinoSingular.value.toLowerCase().split(",").map(answer => answer.trim());
+  const femeninoSingularAnswers = inputFemeninoSingular.value.toLowerCase().split(",").map(answer => answer.trim());
+  const masculinoPluralAnswers = inputMasculinoPlural.value.toLowerCase().split(",").map(answer => answer.trim());
+  const femeninoPluralAnswers = inputFemeninoPlural.value.toLowerCase().split(",").map(answer => answer.trim());
 
-    if (unanswered === expectedAnswers.length) {
-      resultContainer.textContent = "Debes ingresar todas las respuestas antes de verificar.";
-      resultContainer.classList.add("incorrect")
-    } else if (incorrectAnswers === 0) {
-      resultContainer.textContent = "¡Todas las respuestas son correctas, has superado la consigna!";
-      resultContainer.classList.add("texto-verde");
-      disableGame();
+  if (masculinoSingularAnswers.every(answer => correctAnswers.masculinoSingular.includes(answer))) {
+    inputMasculinoSingular.classList.remove("incorrect");
+  } else {
+    allCorrect = false;
+    inputMasculinoSingular.classList.add("incorrect");
+  }
+
+  if (femeninoSingularAnswers.every(answer => correctAnswers.femeninoSingular.includes(answer))) {
+    inputFemeninoSingular.classList.remove("incorrect");
+  } else {
+    allCorrect = false;
+    inputFemeninoSingular.classList.add("incorrect");
+  }
+
+  if (masculinoPluralAnswers.every(answer => correctAnswers.masculinoPlural.includes(answer))) {
+    inputMasculinoPlural.classList.remove("incorrect");
+  } else {
+    allCorrect = false;
+    inputMasculinoPlural.classList.add("incorrect");
+  }
+
+  if (femeninoPluralAnswers.every(answer => correctAnswers.femeninoPlural.includes(answer))) {
+    inputFemeninoPlural.classList.remove("incorrect");
+  } else {
+    allCorrect = false;
+    inputFemeninoPlural.classList.add("incorrect");
+  }
+
+  if (allCorrect) {
+    feedbackArticulos.textContent = "¡Todas las respuestas son correctas!";
+    feedbackArticulos.style.color = "green";
+    inputMasculinoSingular.disabled = true;
+    inputFemeninoSingular.disabled = true;
+    inputMasculinoPlural.disabled = true;
+    inputFemeninoPlural.disabled = true;
+    document.getElementById("btn-verificar").disabled = true;
+    resultado.textContent = "¡Felicidades, has pasado la consigna 6!";
+    resultado.style.color = "green";
+  } else {
+    attempts--;
+    if (attempts > 0) {
+      contadorcito.textContent = `Fallaste, te quedan ${attempts} oportunidades`;
     } else {
-      remainingAttemptsGame--;
-      attemptsMessage.textContent = `Te quedan ${remainingAttemptsGame} oportunidades.`;
-
-      if (remainingAttemptsGame === 0) {
-        resultContainer.textContent = "Se acabaron tus oportunidades. Perdiste.";
-        disableGame();
-      } else {
-        resultContainer.textContent = `Respuestas incorrectas: ${incorrectAnswers}. Inténtalo de nuevo.`;
-      }
+      inputMasculinoSingular.disabled = true;
+      inputFemeninoSingular.disabled = true;
+      inputMasculinoPlural.disabled = true;
+      inputFemeninoPlural.disabled = true;
+      document.getElementById("btn-verificar").disabled = true;
+      resultado.textContent = "¡Perdiste!";
+      resultado.style.color = "red";
     }
-  });
-
-  function disableGame() {
-    const spans = document.querySelectorAll(".placeholder");
-    spans.forEach(span => {
-      span.contentEditable = false;
-    });
-    verifyButton.disabled = true;
   }
 });
+

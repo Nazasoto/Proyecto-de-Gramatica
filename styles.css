@@ -22,7 +22,7 @@ h1, h2 {
 
 h1 {
     font-size: 2.5rem;
-    color: #544e45;
+    color: #AAD190;
     margin-bottom: 20px;
 }
 
@@ -265,3 +265,225 @@ footer a:hover {
     border-bottom: 1px solid black;
     padding: 0 5px;
   }
+
+  .sub1{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+  }
+
+  .sub2{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+  }
+.izqui{
+    text-align: center;
+}
+
+  
+  .question-container {
+    margin-bottom: 20px;
+  }
+  
+  .question-container p {
+    margin-bottom: 10px;
+  }
+  
+  #answer-input {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  #submit-btn {
+    display: block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #af934c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #submit-btn:hover {
+    background-color: #665730;
+  }
+  
+  #comments-container {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  #comments-container {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    max-height: 300px;
+    overflow-y: auto;
+  
+    /* Estilos personalizados para el scroll */
+    scrollbar-width: thin; /* Ancho del scroll en Firefox */
+    scrollbar-color: #888 #f1f1f1; /* Color del thumb y track en Firefox */
+  }
+  #comments-list div{
+    border: 1px solid rgba(79, 70, 64, 0.649);
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px; 
+  }
+
+  #comments-container::-webkit-scrollbar {
+    width: 8px; /* Ancho del scroll en Chrome, Safari y Edge */
+  }
+  
+  #comments-container::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Color del track en Chrome, Safari y Edge */
+  }
+  
+  #comments-container::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color del thumb en Chrome, Safari y Edge */
+    border-radius: 4px; /* Borde redondeado del thumb */
+  }
+  
+  #comments-container::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Color del thumb al pasar el cursor en Chrome, Safari y Edge */
+  }
+  
+  #image-container {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  #answer-container {
+    margin-top: 20px;
+  }
+  
+ .image-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+ .image-container input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+ .image-container button {
+    padding: 10px 20px;
+    background-color: #af934c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+ .image-container button:hover {
+    background-color: #705f33;
+  }
+  
+ .image-container #verification-result {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+
+  
+  #answer-input {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  #submit-btn {
+    display: block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #af934c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #submit-btn:hover {
+    background-color: #665730;
+  }
+  
+  .question-container {
+    margin-bottom: 20px;
+  }
+  
+  #respuesta-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #enviar-btn {
+    padding: 10px 20px;
+    background-color: #AF934C;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #enviar-btn:hover {
+    background-color: #796535;
+  }
+  
+  /* Estilos para los comentarios */
+#comentarios-container {
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+    max-height: 300px; /* Establecemos el límite de altura */
+    overflow-y: auto; /* Habilitamos el desplazamiento vertical */
+     /* Estilos personalizados para el scroll */
+     scrollbar-width: thin; /* Ancho del scroll en Firefox */
+     scrollbar-color: #888 #f1f1f1; /* Color del thumb y track en Firefox */
+  }
+  
+  #lista-comentarios div {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  #lista-comentarios div {
+    border: 1px solid rgba(60, 51, 44, 0.649);
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
