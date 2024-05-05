@@ -6,7 +6,7 @@ document.getElementById("verify-btn").addEventListener("click", () => {
   
     const correctAnswers = {
       character1: "viejo",
-      character2: "nube",
+      character2: "araí",
       character3: "yací",
       character4: "yaguareté"
     };
