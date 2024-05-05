@@ -1,7 +1,7 @@
 
 document.addEventListener("DOMContentLoaded", function() {
     // Array de respuestas correctas para sustantivos comunes y propios
-    let respuestasComunesCorrectas2 = ["noche", "luna", "tierra", "mujeres", "belleza", "selva", "senderos", "vegetación", "yaguareté", "horror", "fiera", "paso", "aire", "costado", "viejo", "lugar", "peligro", "arquero", "corazón", "formas", "cielo", "sueño", "nobleza", "regalo", "planta", "hojas", "infusión", "bebida", "cansado", "débil", "mate", "símbolo", "hermandad", "hombres"];
+    let respuestasComunesCorrectas2 = ["noche", "luna", "tierra", "mujeres", "belleza", "selva", "senderos", "vegetación", "yaguareté", "horror", "fiera", "paso", "aire", "costado", "lugar", "peligro", "arquero", "corazón", "formas", "cielo", "sueño", "nobleza", "regalo", "planta", "hojas", "infusión", "bebida", "cansado", "débil", "mate", "símbolo", "hermandad", "hombres"];
     let respuestasPropiosCorrectas2 = ["yaci", "araí"];
 
     // Contadores de respuestas correctas para sustantivos comunes y propios

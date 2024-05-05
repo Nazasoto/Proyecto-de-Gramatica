@@ -1,5 +1,5 @@
 // Palabras que deben aparecer obligatoriamente
-const palabrasObligatorias = ["YAGUARETE", "VIEJO", "LUNA", "MUJERES", "BELLEZA"];
+const palabrasObligatorias = ["YAGUARETE", "NOCHE", "LUNA", "MUJERES", "BELLEZA"];
 let respuestasCorrectas = 0;
 let juegoBloqueado = false;
 let palabrasIngresadas = []; 
