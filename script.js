@@ -1,7 +1,7 @@
 //La logica de 1
 document.addEventListener("DOMContentLoaded", function() {
     // Array de respuestas correctas
-    let respuestasCorrectas = ["el","noche", "yaci", "araí", "nube", "tierra", "mujeres", "belleza", "selva", "senderos", "vegetación", "yaguareté", "horror", "fiera", "paso", "aire", "lugar", "peligro", "arquero", "corazón", "formas", "cielos", "sueño", "nobleza", "regalo", "plantas", "hojas", "infusión", "bebida", "cansado", "débil", "mate", "símbolo", "hermanandad", "hombres", "una", "la", "un", "las"];
+    let respuestasCorrectas = ["el","noche", "yaci", "araí", "nube", "tierra", "mujeres", "belleza", "selva", "senderos", "vegetación", "yaguareté", "horror", "fiera", "paso", "aire", "lugar", "peligro", "arquero", "corazón", "formas", "cielos", "sueño", "nobleza", "regalo", "plantas", "hojas", "infusión", "bebida", "cansado", "débil", "mate", "símbolo", "hermandad", "hombres", "una", "la", "un", "las"];
 
     // Contador de respuestas correctas
     let respuestasCorrectasContador = 0;
